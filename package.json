@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.1.0",
   "type": "module",
-  "scripts": {"dev":"vite","build":"tsc -b && vite build","preview":"vite preview"},
+  "scripts": {"dev":"vite","build":"tsc -b && vite build","preview":"vite preview","test:importer":"node scripts/run-check.mjs","test:file":"node scripts/run-file-check.mjs","test":"npm run test:importer && npm run test:file"},
   "dependencies": {
     "@react-three/drei":"latest",
     "@react-three/fiber":"latest",
